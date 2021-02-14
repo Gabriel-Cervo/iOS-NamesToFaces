@@ -23,7 +23,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Person" id="Oeg-mV-ddq">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Person" id="Oeg-mV-ddq" customClass="PersonCell" customModule="_00DaysOfSwift_Project9" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="140" height="180"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Lsw-NF-xPX">
@@ -51,6 +51,10 @@
                             <outlet property="delegate" destination="Zdd-1W-Gtw" id="0zb-02-dJD"/>
                         </connections>
                     </collectionView>
+                    <connections>
+                        <outlet property="imageView" destination="agT-tO-kad" id="MNO-gi-I7q"/>
+                        <outlet property="name" destination="Dyw-CV-KTv" id="idz-97-SOT"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dBU-cV-d9q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

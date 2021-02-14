@@ -13,6 +13,7 @@
 		843E55D025D6FEFD007C986D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843E55CE25D6FEFD007C986D /* Main.storyboard */; };
 		843E55D225D6FF00007C986D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843E55D125D6FF00007C986D /* Assets.xcassets */; };
 		843E55D525D6FF00007C986D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843E55D325D6FF00007C986D /* LaunchScreen.storyboard */; };
+		84A65D2C25D99479007D8CAB /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A65D2B25D99479007D8CAB /* PersonCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		843E55D125D6FF00007C986D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		843E55D425D6FF00007C986D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		843E55D625D6FF00007C986D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84A65D2B25D99479007D8CAB /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				843E55CA25D6FEFD007C986D /* SceneDelegate.swift */,
 				843E55CC25D6FEFD007C986D /* ViewController.swift */,
 				843E55CE25D6FEFD007C986D /* Main.storyboard */,
+				84A65D2B25D99479007D8CAB /* PersonCell.swift */,
 				843E55D125D6FF00007C986D /* Assets.xcassets */,
 				843E55D325D6FF00007C986D /* LaunchScreen.storyboard */,
 				843E55D625D6FF00007C986D /* Info.plist */,
@@ -139,6 +142,7 @@
 			files = (
 				843E55CD25D6FEFD007C986D /* ViewController.swift in Sources */,
 				843E55C925D6FEFD007C986D /* AppDelegate.swift in Sources */,
+				84A65D2C25D99479007D8CAB /* PersonCell.swift in Sources */,
 				843E55CB25D6FEFD007C986D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
