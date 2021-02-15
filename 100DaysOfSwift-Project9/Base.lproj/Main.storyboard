@@ -44,6 +44,10 @@
                                     </subviews>
                                 </collectionViewCellContentView>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="imageView" destination="agT-tO-kad" id="VuG-RU-xcp"/>
+                                    <outlet property="name" destination="Dyw-CV-KTv" id="Q49-tH-Nxe"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -51,10 +55,6 @@
                             <outlet property="delegate" destination="Zdd-1W-Gtw" id="0zb-02-dJD"/>
                         </connections>
                     </collectionView>
-                    <connections>
-                        <outlet property="imageView" destination="agT-tO-kad" id="MNO-gi-I7q"/>
-                        <outlet property="name" destination="Dyw-CV-KTv" id="idz-97-SOT"/>
-                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dBU-cV-d9q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
