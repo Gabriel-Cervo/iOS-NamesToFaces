@@ -18,8 +18,12 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         let defaults = UserDefaults.standard
         
         if let savedPeople = defaults.object(forKey: "people") as? Data {
-            if let decodedPeople = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(savedPeople) as? [Person] {
-                people = decodedPeople
+            let jsonDecoder = JSONDecoder()
+            
+            do {
+                people = try jsonDecoder.decode([Person].self, from: savedPeople)
+            } catch {
+                print("Fail to load people")
             }
         }
     }
@@ -100,10 +104,15 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
     }
     
     func save() {
-        if let savedData = try? NSKeyedArchiver.archivedData(withRootObject: people, requiringSecureCoding: false) {
-            let defaults = UserDefaults.standard
-            defaults.set(savedData, forKey: "people")
+        let jsonEncoder = JSONEncoder()
+        
+        guard let savedData = try? jsonEncoder.encode(people) else {
+            print("Failed to save people")
+            return
         }
+        
+        let defaults = UserDefaults.standard
+        defaults.set(savedData, forKey: "people")
     }
 
 
